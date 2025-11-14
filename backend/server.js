@@ -53,6 +53,11 @@ app.get('/api/feedback', async (req, res) => {
   }
 });
 
+app.get('/', async (req, res) => {
+  console.log(`🚀 Server running on render`);
+});
+
+
 // ✅ Start the server
 app.listen(PORT, () => {
   console.log(`🚀 Server running on port ${PORT}`);
